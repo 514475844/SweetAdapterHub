@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "name": "Sweet 采集 AI 版 · 官方适配器市场",
+  "updated": "2026-11-18",
+  "base_url": "https://514475844.github.io/SweetAdapterHub/",
+  "rules": [
+    {
+      "name": "pictoa",
+      "title": "Pictoa",
+      "site": "https://www.pictoa.com",
+      "domains": ["pictoa.com", "t1.pictoa.com", "s2.pictoa.com"],
+      "file": "rules/pictoa.yaml",
+      "author": "514475844",
+      "added": "2026-11-18",
+      "note": "示例规则：懒加载 data-lazy-src + 缩略图域名换原图域名"
+    }
+  ]
+}

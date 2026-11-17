@@ -1,0 +1,32 @@
+name: 提交适配器规则
+description: Submit a new adapter rule for the market
+title: "[规则提交] "
+labels: ["rule-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请确认：目标站点内容**公开可访问**（游客可见），规则不绕过登录、付费墙或防盗链。
+  - type: input
+    id: site
+    attributes:
+      label: 站点地址
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: textarea
+    id: rule
+    attributes:
+      label: 规则 YAML
+      description: 完整规则内容（字段写法见 README）
+      render: yaml
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: 验证说明
+      description: 任选一个图集页网址 + 预期图片数量，维护者会实际跑一遍再合并
+      placeholder: "https://example.com/album/123，约 40 张原图"
+    validations:
+      required: true
